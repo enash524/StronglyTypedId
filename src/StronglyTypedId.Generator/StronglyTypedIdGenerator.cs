@@ -55,6 +55,8 @@ namespace StronglyTypedId.Generator
                     return new StringSyntaxTreeGenerator();
                 case StronglyTypedIdBackingType.Long:
                     return new LongSyntaxTreeGenerator();
+                case StronglyTypedIdBackingType.Double:
+                    return new DoubleSyntaxTreeGenerator();
                 case StronglyTypedIdBackingType.Guid:
                 default:
                     return new GuidSyntaxTreeGenerator();
